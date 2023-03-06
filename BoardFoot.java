@@ -52,10 +52,15 @@ public final class BoardFoot {
             final double WIDTH_DOU = Double.parseDouble(WIDTH);
             final double HEIGHT_DOU = Double.parseDouble(HEIGHT);
 
-            final double LENGTH = calcBoardFt(WIDTH_DOU, HEIGHT_DOU);
+            if (WIDTH_DOU > 0 && HEIGHT_DOU > 0) {
+                final double LENGTH = calcBoardFt(WIDTH_DOU, HEIGHT_DOU);
+                System.out.printf("The length to make the plank equal to a "
+                    + "board foot is %.02f\n", LENGTH);
 
-            System.out.printf("The length to make the plank equal to a "
-                + "board foot is %.02f\n", LENGTH);
+            } else {
+                System.out.println("There was an invalid input! ");
+            }
+
         } catch (NumberFormatException error) {
             System.out.println("There was an invalid input! "
                 + error.getMessage());
