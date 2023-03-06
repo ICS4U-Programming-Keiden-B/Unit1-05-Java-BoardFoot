@@ -27,12 +27,12 @@ public final class BoardFoot {
     * @param funcHeight The height inputted by the user
     * @return Returning the final length
     */
-    public static double calcBoardFt(final double funcWidth,
-        final double funcHeight) {
+    public static double calcBoardFt(final double FUNC_WIDTH,
+        final double FUNC_HEIGHT) {
 
-        final double funcLength = 144 / (funcWidth * funcHeight);
+        final double FUNC_LENGTH = 144 / (FUNC_WIDTH * FUNC_HEIGHT);
 
-        return funcLength;
+        return FUNC_LENGTH;
     }
 
     /**
