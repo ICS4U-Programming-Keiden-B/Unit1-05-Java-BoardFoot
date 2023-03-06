@@ -23,8 +23,8 @@ public final class BoardFoot {
     /**
     * Calculating the necessary length.
     *
-    * @param funcWidth The width inputted by the user
-    * @param funcHeight The height inputted by the user
+    * @param FUNC_WIDTH The width inputted by the user
+    * @param FUNC_HEIGHT The height inputted by the user
     * @return Returning the final length
     */
     public static double calcBoardFt(final double FUNC_WIDTH,
